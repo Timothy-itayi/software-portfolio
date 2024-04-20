@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../fonts/Inter-Bold.ttf') format('truetype');
+    /* Add additional src entries if you have other font file formats */
+  }
+
+  @font-face {
+    font-family: 'Sling';
+    src: url('../fonts/SlingBold.ttf') format('truetype');
+    /* Add additional src entries if you have other font file formats */
+  }
+
+  @font-face {
+    font-family: 'Inter-Regular';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    /* Add additional src entries if you have other font file formats */
+  }
+
+
+
+.header-font {
+    font-family: 'SlingBold';
+}
+.name-font{
+    font-family: 'Inter-Regular';
+}
