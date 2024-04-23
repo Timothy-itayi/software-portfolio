@@ -1,11 +1,11 @@
 // pages/index.js
 
 import Head from 'next/head';
-import NavBar from '../components/navbarComponent'
-import Header from '../components/headerComponent';
-import Card from '../components/cardComponent';
+import NavBar from '../FrontendComponents/navbarComponent'
+import Header from '../FrontendComponents/headerComponent';
+import Card from '../FrontendComponents/cardComponent';
 import Content from './content'
-import ImageWithHover from '../components/imageComponent';
+import ImageWithHover from '../FrontendComponents/imageComponent';
 
 
 
@@ -19,14 +19,22 @@ export default function Home() {
       
       <NavBar/>
         
+  
+
+    
+  
       <Header name="Timothy Itayi" title="Junior Front-End Developer" />
 
-      <div className="flex justify-center  m-12 mb-6 ml-16">
-      <ImageWithHover src1="/headshot.jpeg" src2="/headshot2.JPG" alt="Image" />
-      </div>
-   
-      <Content/>
-      <div className="flex justify-center">
+<div className="flex justify-center  m-12 mb-6 ml-16">
+<ImageWithHover src1="/headshot.jpeg" src2="/headshot2.jpeg" alt="Image" />
+</div>
+
+<Content/>
+
+
+
+      
+      <div className=" mt-10 flex justify-center ">
   <div className="xl:container mx-auto px-6 m-12 mb">
     {/* Group Projects Section */}
     <div className="mb-16 md:w-2/3 lg:w-1/2">
@@ -83,18 +91,21 @@ export default function Home() {
       <Card
         title="Dev Academy Group Project"
         description="A restaurant web application designed to keep up with customer needs"
-        imageUrl="/group1.png"
+        imageUrl="logos/group1.png"
         altText="waitlessLogo"
         link="/waitless"
-      />
+    />
+      
+      
       <Card
         title="CoffeeSnob"
         description="A  cafe app to help customers discover cafes in their area made with Swift"
-        imageUrl="/coffeesnobLogo.png"
+        imageUrl="logos/coffeesnobLogo.png"
         altText="Woman 1"
-        link="/coffeeSnob"
-      />
-    </div>
+        link = "/coffeesnob"
+       />
+        
+      </div>
   </div>
 </div>
 

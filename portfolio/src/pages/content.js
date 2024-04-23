@@ -1,20 +1,16 @@
 // pages/Home.js
 
 import React from 'react';
-import ContentComponent from '../components/contentComponent';
+import ContentComponent from '../FrontendComponents/contentComponent';
 
 const Content = ()  => {
   return (
 <>
-  {/* Title */}
-  <div className="flex  justify-center m-12 mb-6 ">
-      <h2 className="text-xl font-semibold  text-white">About Me</h2>
-    </div>
-    
-    {/* Description */}
-    <div className="flex justify-center m-12 mb-6 ">
+ 
+
+    <div className="flex justify-center m-10 mb-6 animate-fade-up  ">
       <ContentComponent style={{ fontSize: '24px', color: 'white', fontFamily: 'Inter-Regular', paddingLeft: 32 }}>
-        Hi there, &#9995; My name is Timothy Itayi and I am a junior full stack developer with a keen eye for front-end web and mobile development.
+        Hi there, I'm a full Stack Developer with a passion for Front-end developement. If I am not in front of a screen you will either  find me in the gym weightlifting or sim racing on Gran Torismo.
       </ContentComponent>
    </div>
 
