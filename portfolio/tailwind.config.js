@@ -1,17 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/pages/**/*.js", "./src/components/**/*.js"],
-  theme: {
-    extend: {
-      grayscale: {
-        0: '0',
-        100: '100%',
+ theme: {
+  extend: {
+    keyframes:{
+      fade: {
+        '0%': {opacity: '0'},
+        '100%': {opactiy: '1'},
       },
     },
   },
+  animation:{
+    fade:'fade 1s east-out',
+  },
+ },
+
   variants: {
     grayscale: ['responsive', 'hover'],
   },
-  plugins: [],
+  plugins: [
+  require ('tailwindcss-animated')
+  ],
 }
 
