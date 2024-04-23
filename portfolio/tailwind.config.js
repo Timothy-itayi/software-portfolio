@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/pages/**/*.js", "./src/components/**/*.js"],
+  content: ["./src/pages/**/*.js", "./src/FrontendComponents/**/*.js"],
+
  theme: {
   extend: {
     keyframes:{
@@ -19,7 +20,9 @@ module.exports = {
     grayscale: ['responsive', 'hover'],
   },
   plugins: [
-  require ('tailwindcss-animated')
+  require ('tailwindcss-animated'),
+
+  
   ],
 }
 
