@@ -1,12 +1,16 @@
 
-
-export default function Header({ name, title }) {
+const Header = ({ name, title }) =>  {
 
 
   return (
-    <div className={"flex  flex-col items-center justify-center pt-8"}>
-      <h1 className="text-4xl font-extrabold dark:text-white header-font mb-10">{title}</h1>
-      <h2 className="   text-gray-400 mt-2" style={{fontFamily: 'name-font', fontSize: '25px'}}>{name}</h2>
-    </div>
+    <div className={"flex flex-col justify-center items-center  pt-10 pl-4 "}>
+      <div>
+      <h1 className="text-4xl font-extrabold text-white header-font mb-2">{title}</h1>
+      </div>
+    <div> 
+      <h2 className="  text-gray-400 mt-2" style={{fontFamily: 'name-font', fontSize: '25px'}}>{name}</h2>
+      </div>
+      </div>
   );
 }
+export default Header
