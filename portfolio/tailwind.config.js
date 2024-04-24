@@ -1,9 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/pages/**/*.js", "./src/homeComponents/**/*.js"],
+  content: ["./src/pages/**/*.js", "./src/homeComponents/**/*.js","./src/grpComponents/**/*.js"],
 
  theme: {
   extend: {
+    gridRow:{
+
+    },
+    maxWidth: {
+    
+    },
     keyframes:{
       fade: {
         '0%': {opacity: '0'},
