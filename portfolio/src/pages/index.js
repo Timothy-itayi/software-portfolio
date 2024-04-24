@@ -1,11 +1,11 @@
 // pages/index.js
 
 import Head from 'next/head';
-import NavBar from '../FrontendComponents/navbarComponent'
-import Header from '../FrontendComponents/headerComponent';
-import Card from '../FrontendComponents/cardComponent';
+import NavBar from '../homeComponents/navbarComponent'
+import Header from '../homeComponents/headerComponent';
+import Card from '../homeComponents/projectCardComponent';
 import Content from './content'
-import ImageWithHover from '../FrontendComponents/imageComponent';
+import ImageWithHover from '../homeComponents/imageComponent';
 
 
 

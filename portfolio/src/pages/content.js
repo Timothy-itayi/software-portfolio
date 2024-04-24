@@ -1,7 +1,7 @@
 // pages/Home.js
 
 import React from 'react';
-import ContentComponent from '../FrontendComponents/contentComponent';
+import ContentComponent from '../homeComponents/contentComponent';
 
 const Content = ()  => {
   return (
