@@ -25,23 +25,20 @@ export default function Home() {
   
       <Header name="Timothy Itayi" title="Junior Front-End Developer" />
 
-<div className="flex justify-center  m-12 mb-6 ml-16">
+<div className="flex justify-center animate-fade-up m-12 mb-6 ml-16">
 <ImageWithHover src1="/headshot.jpeg" src2="/headshot2.jpeg" alt="Image" />
 </div>
 
 <Content/>
 
-
-
-      
-      <div className=" mt-10 flex justify-center ">
+<div className=" mt-10 flex justify-center ">
   <div className="xl:container mx-auto px-6 m-12 mb">
     {/* Group Projects Section */}
     <div className="mb-16 md:w-2/3 lg:w-1/2">
-      <h2 className="mb-4 text-2xl font-bold text-white  md:text-4xl">
+      <h2 className="mb-4 text-2xl text-center font-bold text-white  md:text-4xl">
        Personal Projects 
       </h2>
-      <p className="text-white text-white">
+      <p className="text-center text-white">
         Here are some of my own projects I have worked on.
       </p>
     </div>
@@ -74,23 +71,25 @@ export default function Home() {
     </div>
   </div>
 </div>
+ 
 
-<div className="py-20">
-  <div className="xl:container mx-auto px-6 md:px-12">
-    {/* Group Projects Section */}
-    <div className="mb-16 md:w-2/3 lg:w-1/2">
-      <h2 className="mb-4 text-2xl font-bold text-white md:text-4xl">
+
+<div className="py-5  ">
+  <div className="container mx-auto  md:px-12  ">
+    <div className="mb-16 md:w-2/3 lg:w-1/2 ">
+      <h2 className="mb-4 text-2xl font-bold text-white text-center md:text-4xl">
        Group Projects 
       </h2>
-      <p className="text-white">
+      <p className="text-white text-center">
         Here are some of my Group projects.
       </p>
     </div>
-    <div className="grid gap-6 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-auto-fit xl:grid-cols-minmax(16rem, 1fr)">
+
+    <div className=" grid gap-10 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-auto-fit xl:grid-cols-minmax(16rem, 1fr)">
    
       <Card
         title="Dev Academy Group Project"
-        description="A restaurant web application designed to keep up with customer needs"
+        description="A restaurant web application designed to keep up with customer needs made with React"
         imageUrl="logos/group1.png"
         altText="waitlessLogo"
         link="/waitless"
@@ -99,7 +98,7 @@ export default function Home() {
       
       <Card
         title="CoffeeSnob"
-        description="A  cafe app to help customers discover cafes in their area made with Swift"
+        description="A cafe app to help customers discover coffee spots in their area made with Swift and TomTomSDk"
         imageUrl="logos/coffeesnobLogo.png"
         altText="Woman 1"
         link = "/coffeesnob"
@@ -108,10 +107,6 @@ export default function Home() {
       </div>
   </div>
 </div>
-
-
- 
-
 
   
 
