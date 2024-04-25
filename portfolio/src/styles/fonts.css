@@ -16,6 +16,11 @@
     /* Add additional src entries if you have other font file formats */
   }
 
+  @font-face {
+    font-family: 'Inter-Black';
+    src: url('../fonts/Inter-Black.ttf') format('truetype');
+    /* Add additional src entries if you have other font file formats */
+  }
 
 
 .header-font {
@@ -23,4 +28,7 @@
 }
 .name-font{
     font-family: 'Inter-Regular';
+}
+.card-font{
+    font-family: 'Inter-Black'
 }

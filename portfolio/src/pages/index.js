@@ -23,7 +23,7 @@ export default function Home() {
 
     
   
-      <Header name="Timothy Itayi" title="Junior Front-End Developer" />
+      <Header name="Timothy Itayi" title="Front-End Developer" />
 
 <div className="flex justify-center animate-fade-up m-12 mb-6 ml-16">
 <ImageWithHover src1="/headshot.jpeg" src2="/headshot2.jpeg" alt="Image" />
@@ -31,7 +31,7 @@ export default function Home() {
 
 <Content/>
 
-<div className=" mt-10 flex justify-center ">
+<div className="  flex justify-center ">
   <div className="xl:container mx-auto px-6 m-12 mb">
     {/* Group Projects Section */}
     <div className="mb-16 md:w-2/3 lg:w-1/2">
@@ -74,8 +74,8 @@ export default function Home() {
  
 
 
-<div className="py-5  ">
-  <div className="container mx-auto  md:px-12  ">
+<div className="py-5  flex justify-center  ">
+  <div className="xl:container mx-auto px-6 m-12 mb ">
     <div className="mb-16 md:w-2/3 lg:w-1/2 ">
       <h2 className="mb-4 text-2xl font-bold text-white text-center md:text-4xl">
        Group Projects 
@@ -85,10 +85,10 @@ export default function Home() {
       </p>
     </div>
 
-    <div className=" grid gap-10 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-auto-fit xl:grid-cols-minmax(16rem, 1fr)">
+    <div className=" grid gap-6 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
    
       <Card
-        title="Dev Academy Group Project"
+        title="Waitless"
         description="A restaurant web application designed to keep up with customer needs made with React"
         imageUrl="logos/group1.png"
         altText="waitlessLogo"

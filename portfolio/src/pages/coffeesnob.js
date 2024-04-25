@@ -6,11 +6,32 @@ import BodyLayout from '../grpComponents/bodyLayoutComponent';
 import Card from '../grpComponents/coffeeComponent';
 import Timeline from '../grpComponents/timelineComponent';
 import events from '../backEndComponents/events';
-
+import React, {useState} from 'react';
+import Link from 'next/link';
 
 const Coffee = () => { 
 
-  
+    const [showButton, setShowButton] = useState(false);
+
+    // Function to handle scrolling and toggle button visibility
+    const handleScroll = () => {
+        if (window.scrollY > 400) { // Adjust 400 to your desired scroll position
+            setShowButton(true);
+        } else {
+            setShowButton(false);
+        }
+    };
+
+    // Function to handle scrolling to the top
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    
+    React.useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
 
@@ -20,7 +41,7 @@ const Coffee = () => {
             <Header title="CoffeeSnob" name="An IOS app designed to help people discover cafes in their area." />
             <div className="flex justify-center m-10 mb-6 animate-fade-up  ">
                 <LayoutComponent style={{ fontSize: '24px', color: 'white', fontFamily: 'Inter-Regular', paddingLeft: 32 }}>
-                    This Project was created as a final assignment for Harvard's Intro to Computer Science Course for CS50 2024.
+                    This Project was created as a final assignment for Harvard's Intro to Computer Science Course for CS50X 2024.
                 </LayoutComponent>
             </div>
         </div>
@@ -31,17 +52,48 @@ const Coffee = () => {
                         "coffeeImages/reactLogoBlk.png",
                         "coffeeImages/jsLogo.png",
                         "coffeeImages/cslogowhite.png",
+                        "coffeeImages/swift.png",
+                        
                     ]}
-                    title="Can coffee make you a better developer?"
-                    description="Coffeesnob was initially built using React-Native, with expo. This was my first time making an entire project from scratch and so I thought to get the help from my girlfriend Gracie to help me design it. Having already worked in the industry as a Product Designer for several years , it  was nice to get some insight on how to work with  and better understand what that professional relationship would be like. With that out of the way let me walk you through how an ambitious idea to create a social app for coffee lovers from a figma prototype  made  in 2021 turned into a very humbling exeprience filled with an appreciation for good design and user experience.... " />
+                    
+                    />   
+    <div className="animate-fade-up bg-black pb-1 pt-1 grid place-items-center sm:px-5 md:px-10 lg:px-20 xl:px-40">
+    <div className="  bg-black pt-4">
 
+        <a className="pl-2 text-xl card-font text-white">Click below to  view Demo</a>
+        <div className="p-10">
+        <ul>
+            <Link href="https://youtu.be/vS-nl_sHrvI">
+                <button className="py-5 px-9 rounded  bg-gray hover:bg-red-200 transition duration-300 ease-in-out">
+                    <img src='logos/youtube.png' className="h-10 filter invert" alt="YouTube Logo" />
+                </button>
+            </Link>
+        </ul>
+        </div>
+        
+    </div>
+</div>
 
+                    
+
+                          
+ 
             </BodyLayout>
             </>
          
             <div className={"animate-fade-up"}>
                 <Timeline events={events} />
+               
             </div>
+
+            {showButton && (
+                <button
+                    className=" fixed bottom-10 right-10  py-2 px-4 rounded-full name-font  text-white bg-gray-400  "
+                    onClick={scrollToTop}
+                >
+                    Return to Top
+                </button>
+            )}
             </>
       
     )
