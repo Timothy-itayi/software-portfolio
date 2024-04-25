@@ -17,7 +17,7 @@ const Card = ({ title, description, imageUrl, altText, link }) => {
       <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-3 py-4 bg-gray-800 dark:bg-white translate-y-24 transition duration-300 ease-in-out group-hover:translate-y-0">
         <div>
           <h4 className="text-xl font-semibold dark:text-gray-700 text-white header-font py-1">{title}</h4>
-          <p className="mt-3 mb-4 text-gray-300 dark:text-gray-400 name-font ">{description}</p>
+          <p className="mt-2 mb-2 text-gray-300 dark:text-gray-400 name-font ">{description}</p>
         </div>
         {link && (
           <Link href={link}>
