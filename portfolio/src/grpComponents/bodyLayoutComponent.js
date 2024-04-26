@@ -1,6 +1,6 @@
 const BodyLayout = ({ children }) => {
     return (
-      <div >
+      <div className="pb-5" >
         <div >
           {children}
         </div>

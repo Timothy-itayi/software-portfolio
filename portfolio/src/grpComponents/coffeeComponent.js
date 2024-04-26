@@ -1,7 +1,7 @@
 
 
 
-const Card = ({ imageUrls = [] ,title, description, author, author2,  }) => {
+const Card = ({ imageUrls = []   }) => {
 
     return (
       <div className=" overflow-hidden animate-fade-up    ">
@@ -16,15 +16,7 @@ const Card = ({ imageUrls = [] ,title, description, author, author2,  }) => {
           />
         ))}
         </div>
-        <div className="px-6 py-4  ">
-          <div className="text-white SlingBold text-2xl text-center " >{title}</div>
-          <p className="text-white text-base mt-3">{description}</p>
-        </div>
-        <div className="px-6 py-4">
-          <div className="name-font text-white text-sm ">{author}</div>
-          <div className="name-font text-white  ">{author2}</div>
       
-        </div>
       </div>
     );
   };
