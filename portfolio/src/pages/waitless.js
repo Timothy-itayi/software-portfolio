@@ -1,15 +1,13 @@
 
-import Navbar from '../grpComponents/navbarComponent';
+import React, {useState} from 'react';
+import Navbar from '../grpComponents/navbarComponent'
 import Header from '../homeComponents/headerComponent';
-import LayoutComponent from '../grpComponents/layoutComponent'
+import LayoutComponent from '../grpComponents/layoutComponent';
+import ContentComponent from '../homeComponents/contentComponent';
 import BodyLayout from '../grpComponents/bodyLayoutComponent';
 import Card from '../grpComponents/coffeeComponent';
-import Timeline from '../grpComponents/timelineComponent';
-import events from '../backEndComponents/events';
-import React, {useState} from 'react';
 import Link from 'next/link';
-
-const Coffee = () => { 
+const Waitless = () => { 
 
     const [showButton, setShowButton] = useState(false);
 
@@ -35,29 +33,37 @@ const Coffee = () => {
 
     return (
 
-    <><><div className="bg-black">
+    <div className="bg-black">
 
             <Navbar />
-            <Header title="CoffeeSnob" ddescription="An IOS app designed to help people discover cafes in their area." />
+            <Header title="Waitless" />
+            <div className="flex justify-center ">
+
+<div className="flex  m-20 animate-fade-up  ">
+      <ContentComponent style={{ fontSize: '24px', color: 'gray', fontFamily: 'Inter-Regular', paddingLeft: 32 , textAlign: 'center'}}>
+      A Full-stack web application  for ordering your food in a restaurant without waiting for the waitress. Why wait when you can waitless. Scan the QR code on your table and send the order to the kitchen.
+      </ContentComponent>
+   </div>
+
+</div>
             <div className="flex justify-center m-10 mb-6 animate-fade-up  ">
                 <LayoutComponent style={{ fontSize: '24px', color: 'white', fontFamily: 'Inter-Regular', paddingLeft: 32 }}>
-                    This Project was created as a final assignment for Harvard's Intro to Computer Science Course for CS50X 2024.
+                    This Group Project was created as a final assignment for Dev Academy .
                 </LayoutComponent>
             </div>
-        </div>
+
             <BodyLayout>
                 <Card
                     imageUrls={[
-                        "coffeeImages/snack.png",
-                        "coffeeImages/reactLogoBlk.png",
-                        "coffeeImages/jsLogo.png",
-                        "coffeeImages/cslogowhite.png",
-                        "logos/xpo.png",
+                        "/devacademy.png",
+                        "logos/react.png",
+                        "logos/knex.png",
+                        "logos/sql.png",
+                        "/type.png",
                         
                     ]}
                     
                     />   
-    
     <div className="animate-fade-up bg-black pb-1  grid place-items-center sm:px-5 md:px-10 lg:px-20 xl:px-40">
     <div className="  bg-black pt-4 ">
 
@@ -65,16 +71,16 @@ const Coffee = () => {
         <div className="p-10  flex flex-row justify between ml-4 mr-4  ">
         <ul className=" flex">
             <li >
-            <Link href="https://youtu.be/vS-nl_sHrvI">
-                <button className="py-2 px-2 rounded  bg-black hover:bg-red-500 transition duration-300 ease-in-out">
-                    <img src='logos/youtube.png' className="h-20 filter invert" alt="youtube Logo" />
+            <Link href="https://orca-app-kf2qf.ondigitalocean.app/">
+                <button className="py-2 px-2 rounded  bg-gray hover:bg-white transition duration-300 ease-in-out">
+                    <img src='logos/digitalocean.png' className="h-20" alt="digital Logo" />
            
                 </button>
             </Link>
             </li>
             
             <li>
-            <Link href="https://github.com/Timothy-itayi/CoffeeSnobv1.3?tab=readme-ov-file">
+            <Link href="https://github.com/harakeke-2023/Waitless">
                 <button className="py-6 px-4 ml-3 rounded text-white bg-black hover:bg-gray-300  transition duration-300 ease-in-out">
                 <img src='logos/github.png' className="h-12 " alt="Git Logo" />
                 </button>
@@ -93,14 +99,7 @@ const Coffee = () => {
 
                           
  
-            </BodyLayout>
-            </>
-         
-            <div className={"animate-fade-up"}>
-                <Timeline events={events} />
-               
-            </div>
-
+            </BodyLayout> 
             {showButton && (
                 <button
                     className=" fixed bottom-10 right-10  py-2 px-4 rounded-full name-font  text-white bg-gray-400  "
@@ -109,10 +108,11 @@ const Coffee = () => {
                     Return to Top
                 </button>
             )}
-            </>
-      
+  
+        </div>
+
+        
     )
+};
 
-}
-
-export default Coffee; 
+        export default Waitless;

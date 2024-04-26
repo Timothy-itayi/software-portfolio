@@ -42,6 +42,7 @@ const events = [
     description: 'I am grateful with how the app turned out, though I can say it is not exactly like the prototype, however I do think I got an idea of what this app could be if developed further and with a team. Working on this project gave me a new apprecitiation for mobile developers, this is not an easy feat but am glad to have learnt so much in such a short amount of time.  ',
      date: '12/4/24',
     images: [
+      
       {url: '/coffeeImages/alert.png'},
       {url: '/coffeeImages/coffeeRoaster.png'},
       ,
@@ -49,7 +50,7 @@ const events = [
     ]
     },
 
-  
+    
 ];
 
 export default events;

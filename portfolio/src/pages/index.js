@@ -1,15 +1,43 @@
 // pages/index.js
 
 import Head from 'next/head';
-import NavBar from '../homeComponents/navbarComponent'
+import Navbar from '../homeComponents/navbarComponent'
 import Header from '../homeComponents/headerComponent';
 import Card from '../homeComponents/projectCardComponent';
 import Content from './content'
 import ImageWithHover from '../homeComponents/imageComponent';
 import BlogCard from '../homeComponents/blogCardComponent';
-
+import React, {useState,useRef,} from 'react';
 
 export default function Home() {
+  const [showButton, setShowButton] = useState(false);
+  const projectsRef = useRef(null); // Reference to the projects section
+
+    // Function to handle scrolling and toggle button visibility
+    const handleScroll = () => {
+        if (window.scrollY > 400) { 
+            setShowButton(true);
+        } else {
+            setShowButton(false);
+        }
+    };
+
+    // Function to handle scrolling to the projects section
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
+    // Function to handle scrolling to the top
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    
+    React.useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
   return (
     <div className="bg-black">
       <Head>
@@ -17,7 +45,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       
-      <NavBar/>
+      <Navbar scrollToProjects={scrollToProjects}/>
         
   
 
@@ -31,29 +59,33 @@ export default function Home() {
 
 <Content/>
 
-<div className="py-6 flex flex-wrap gap-4 justify-center  ">
-<h2 className="mb-4  text-center text-2xl font-bold text-white  md:text-4xl">
-       Here is what I have learned  during my time at Dev Academy 
+<div className="py-6 flex flex-wrap  justify-center  ">
+<h2 className="  text-center text-2xl card-font text-white  md:text-4xl">
+       Here is what I have learned during my time at Dev Academy 
       </h2>
-  <div className="md:mx-auto container p-2  m-12 mb " >
-  <BlogCard
-        imageUrls=
-         {["/coffeeImages/reactLogoBlk.png",
-       "/type.png",
-      "/nextLogo.svg"]}
-        title="React"
-        description="After a year of coding with React It's safe to say I am fairly comfortable with it and can create whatever I want in a reasonable time. However everytime I make a new  project  with it I am always humbled by what I do not know and am always looking to grow as a developer."
-
-      />
+  <div className="md:mx-auto container   m-12 mb " >
+  
      
       <BlogCard
         imageUrls={[
-          "/logos/css.png",
-          "/logos/hTml.png",
+       
+          "/h-removeb.png",
+          "/logos/javascript.png",
+          "/logos/kiss.png",
+        
                    
-                     "/logos/javascript-logo.png"]}
-        title="CSS , Html & Javascript"
-        description="Learning the rudimentary principles is your one stop shop to creating whatever you want. I have learned a lot with these methods when it has come to building websites even from the beginner stage. I am very confident in my abilities with these but I always know I have more room for improvement."
+                    ]}
+        title="Fundamental Languages"
+        description="Learning the rudimentary principles is your one stop shop to creating whatever you want. I have learned a lot with these methods when it has come to building websites. I am confident in my abilities with these but I always know I have more room for improvement because there is always something new to be gained from going back to the basics. It's like playing a sport you have got to practice to get better.   "
+      />
+      <BlogCard
+        imageUrls=
+         {["/logos/react.png",
+       "/type.png",
+      "/logos/tailwind.png"]}
+        title="Frameworks "
+        description="After a year of coding with React It's safe to say I am fairly comfortable with it and can create whatever I want in a reasonable time. However everytime I make a new  project  with it I am always humbled by what I do not know and am always looking to grow as a developer."
+
       />
         <BlogCard
         imageUrls={[
@@ -63,7 +95,7 @@ export default function Home() {
                    
                    ]}
         title="Back-end Technologies"
-        description="As much as I enjoy Front-end for its flair I needed to grasp the back-end portion of this discipline and not be seen as a one trick pony. So Dev Academy provided me and my cohort with the necessary tools to learn as much as we could on setting up our envrionments with commandLine Tools to utilising databases in projects and learning to test code our  through continuous intergration. "
+        description="As much as I enjoy Front-end for its flair I needed to grasp the back-end portion of this discipline. Dev Academy provided an introductory back-end stack to get me familiar with.     "
       />
     
     </div>
@@ -71,25 +103,21 @@ export default function Home() {
   </div >
      
      <div className="py-6 flex flex-wrap gap-4 justify-center  ">
-      <h2 className="mb-4  text-center text-2xl font-bold text-white  md:text-4xl">
-        Here is what I have learned from Harvard's Intro to Computer Science Course
+      <h2 className="mb-4  text-center text-2xl card-font text-white  md:text-4xl">
+        My Introduction to Computer Science with CS50x
       </h2>
       <div className="md:mx-auto container p-2  m-12 mb ">
       <BlogCard
-        imageUrl="/htmlncss.png"
-        title=""
-        description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+        imageUrls={["/logos/C.png","/logos/swfit.png"]}
+        title="Computer Science Fundamentals"
+        description="CS50 taught me what Dev Academy could not provide and that was a more foundational understanding of programming. I found it refreshing to take a step back from learning frameworks and technologies to having a better understanding of a langauge at a lower level. It really made me appreciate the details a lot more and gave me more confidence when dealing with higher-level abstract languages like Swift.  "
       />
              <BlogCard
-        imageUrl="/htmlncss.png"
-        title="HTML & CSS"
-        description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
+    imageUrls={["logos/mysql-logo.svg","/logos/pythn.png"]}
+        title="More Back-end"
+        description="My understanding of back-end development expanded significantly once I delved into Python, despite its higher level of abstraction. Initially, it took some time to adjust to this new paradigm, but with persistence and practice, I gradually became accustomed to working with Python. Python's versatility and readability ultimately enhanced my development workflow, enabling me to tackle complex backend tasks with greater efficiency and confidence "
       />
-              <BlogCard
-        imageUrl="/htmlncss.png"
-        title="HTML & CSS"
-        description="Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order."
-      />
+      
     
       </div>
     
@@ -97,10 +125,10 @@ export default function Home() {
  
  
 
-
+     <div ref={projectsRef}></div>
 <div className="py-5  flex justify-center  ">
   <div className="xl:container mx-auto px-6 m-12 mb ">
-    <div className="mb-16 md:w-2/3 lg:w-1/2 ">
+    <div className="mb-16    ">
       <h2 className="mb-4 text-2xl font-bold text-white text-center md:text-4xl">
         Projects 
       </h2>
@@ -131,7 +159,14 @@ export default function Home() {
       </div>
   </div>
 </div>
-
+{showButton && (
+                <button
+                    className=" fixed bottom-10 right-10  py-2 px-4 rounded-full name-font  text-white bg-gray-400  "
+                    onClick={scrollToTop}
+                >
+                    Return to Top
+                </button>
+            )}
   
 
       <footer>
