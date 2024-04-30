@@ -97,7 +97,7 @@ export default function Home() {
                    
                    ]}
         title="Back-end Technologies"
-        description="As much as I enjoy Front-end for its flair I needed to grasp the back-end portion of this discipline. Dev Academy provided an introductory back-end stack to get me familiar with.     "
+        description="As much as I enjoy Front-end for its flair I needed to grasp the back-end portion of this discipline. Dev Academy provided an introductory back-end stack to get me familiar with. We were also introduced to Restful-APis as well as CD/CI methodologies.     "
       />
     
     </div>
