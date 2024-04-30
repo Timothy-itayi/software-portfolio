@@ -51,7 +51,7 @@ export default function Home() {
 
     
   
-      <Header name="Timothy Itayi" title="Front-End Developer" />
+      <Header name="Timothy Itayi" title="Full Stack Developer" />
 
 <div className="flex justify-center animate-fade-up m-12 mb-6 ml-16">
 <ImageWithHover src1="/headshot.jpeg" src2="/headshot2.jpeg" alt="Image" />
