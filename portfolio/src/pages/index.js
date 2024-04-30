@@ -56,7 +56,7 @@ export default function Home() {
 <div className="flex justify-center animate-fade-up m-12 mb-6 ml-16">
 <ImageWithHover src1="/headshot.jpeg" src2="/headshot2.jpeg" alt="Image" />
 </div>
-<div class="animate-fade-up flex justify-center pt-5  pl-5 space-x-4">
+<div className="animate-fade-up flex justify-center pt-5  pl-5 space-x-4">
             <a className="animated-button text-white " href="/Timothy_Itayi_-_Full_Stack_Developer.pdf" download>Download Resume</a>
       </div>
 <Content/>
