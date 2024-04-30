@@ -41,7 +41,7 @@ const Coffee = () => {
             <Header title="CoffeeSnob" ddescription="An IOS app designed to help people discover cafes in their area." />
             <div className="flex justify-center m-10 mb-6 animate-fade-up  ">
                 <LayoutComponent style={{ fontSize: '24px', color: 'white', fontFamily: 'Inter-Regular', paddingLeft: 32 }}>
-                    This Project was created as a final assignment for Harvard's Intro to Computer Science Course for CS50X 2024.
+                    This Project was created as a final assignment for Harvards Intro to Computer Science Course for CS50X 2024.
                 </LayoutComponent>
             </div>
         </div>
