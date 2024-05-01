@@ -39,7 +39,7 @@ const events = [
       
 
     { title: 'Welcome to CoffeeSnob ', 
-    description: 'I am grateful with how the app turned out, though I can say it is not exactly like the prototype, however I do think I got an idea of what this app could be if developed further and with a team. Working on this project gave me a new apprecitiation for mobile developers, this is not an easy feat but am glad to have learnt so much in such a short amount of time.  ',
+    description: 'I am grateful for how the app turned out, though I can say it is not exactly like the prototype, However, I do believe I have gained an understanding of what this app could become with further development and the support of a team. Working on this project gave me a new apprecitiation for mobile developers, Working on this project has given me a new appreciation for mobile developers; it is no easy feat, but I am glad to have learned so much in such a short amount of time. ',
      date: '12/4/24',
     images: [
       
