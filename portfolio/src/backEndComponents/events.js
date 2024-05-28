@@ -4,7 +4,7 @@ const events = [
     description: 'After getting through to the end of the  cs50x course I was tasked to make a final project. I had no real clue what I wanted to do except to create something that was new and fresh and I remembered that my girlfriend who is a product designer had a protoype that she created recently  that I could potentially build. Given my experience and that I was the only developer working on this project I made sure to give myself a deadline of 1 month. ',
      date: '13/3/24',
       images: [
-            {url: '/under.jpg', alt: 'Under'}
+            {url: 'coffeeImages/under.jpg', alt: 'Under'}
       ]},
 
     { title: 'The Prototype', 

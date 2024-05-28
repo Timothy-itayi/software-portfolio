@@ -8,7 +8,7 @@ const Navbar = () => {
           <li>
               <Link href="/">           
                 <button className="py-4 px-5 text-white bg-black  transition duration-300 ease-in-out ">
-                <img src='/home.png' className=" h-6" alt="homeLogo" />
+                <img src='homeImages/home.png' className=" h-6" alt="homeLogo" />
                 </button>
               </Link>
             </li>

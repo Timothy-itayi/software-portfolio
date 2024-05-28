@@ -54,7 +54,7 @@ export default function Home() {
       <Header name="Timothy Itayi" title="Full Stack Developer" />
 
 <div className="flex justify-center animate-fade-up m-12 mb-6 ml-16">
-<ImageWithHover src1="/headshot.jpeg" src2="/headshot2.jpeg" alt="Image" />
+<ImageWithHover src1="homeImages/headshot.jpeg" src2="homeImages/headshot2.jpeg" alt="Image" />
 </div>
 <div className="animate-fade-up flex justify-center pt-5  pl-5 space-x-4">
             <a className="animated-button text-white " href="/Timothy_Itayi_-_Full_Stack_Developer.pdf" download>Download Resume</a>
@@ -71,7 +71,7 @@ export default function Home() {
       <BlogCard
         imageUrls={[
        
-          "/h-removeb.png",
+          "/logos/h-removeb.png",
           "/logos/javascript.png",
           "/logos/kiss.png",
         
@@ -83,7 +83,7 @@ export default function Home() {
       <BlogCard
         imageUrls=
          {["/logos/react.png",
-       "/type.png",
+       "/logos/type.png",
       "/logos/tailwind.png"]}
         title="Frameworks "
         description="After a year of coding with React It's safe to say I am fairly comfortable with it and can create whatever I want in a reasonable time. However everytime I make a new  project  with it I am always humbled by what I do not know and am always looking to grow as a developer."
@@ -154,9 +154,18 @@ export default function Home() {
         title="CoffeeSnob"
         description="A cafe app to help customers discover coffee spots in their area made with Swift and TomTomSDk"
         imageUrl="logos/coffeesnobLogo.png"
-        altText="Woman 1"
+        altText="coffeesnob"
         link = "/coffeesnob"
        />
+
+        <Card
+        title="Grandprix History"
+        description="A web application to showcase my love for Formula 1. Made with React and Nodejs."
+        imageUrl="logos/grandprixHistory.png"
+        altText="gpHistory"
+        link = "/Grandprix"
+       />
+        
         
       </div>
   </div>
