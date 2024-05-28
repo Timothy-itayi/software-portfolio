@@ -8,7 +8,8 @@ import BodyLayout from '../grpComponents/bodyLayoutComponent';
 import BlogCard from '../homeComponents/blogCardComponent';
 import Card from '../grpComponents/coffeeComponent';
 import Link from 'next/link';
-import ImageWithHover from '@/homeComponents/imageComponent';
+import f1events from '../backEndComponents/f1events'
+import Timeline from '../grpComponents/timelineComponent'
 const Grandprix = () => { 
 
     const [showButton, setShowButton] = useState(false);
@@ -97,17 +98,14 @@ const Grandprix = () => {
         </ul>
     
         </div>
-        <BlogCard
-        title="Project Overview"
-        description="GrandPrix History was initially developed with Python, Flask, and Jinja to test how far I could push the application. Python made it easy to set up the backend and consume external Web APIs, but creating a suitable frontend was challenging. Given the deadline, I decided to transition to React for the frontend. I set a one-week timeline to plan, develop, and deploy the web application, starting with a React template. My experience with Next.js for my portfolio website made configuring GpHistory much easier. This project also tested my backend skills in setting up API routes and clients for the frontend. Despite some trial and error, I produced a well-functioning application built with React, JavaScript, Node.js, and Tailwind. Additionally, I wrote basic tests to get comfortable with Jest. "/>
+       
 
-<div className=" grid gap-4 md:flex md:flex-row md:flex-wrap justify-center pt-6 " >
-    <img className="  object-contain h-90 w-96 "src="GrandprixImages/planningGP.png" />
-    <img className="  object-contain h-90 w-96 "src="GrandprixImages/python-project-1.png" />
-    <img className= "object-contain h-90 w-96 " src="GrandprixImages/python-project-2.png"/>
+<div className={"animate-fade-up"}>
+                <Timeline events={f1events} />
+               
+            </div>
 
 
-  </div>
 
     </div>
 
