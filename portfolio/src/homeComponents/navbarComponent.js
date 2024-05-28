@@ -10,7 +10,7 @@ const Navbar = ({ scrollToProjects }) => {
           <li>
             <Link href="/">
               <button className="py-4 px-6 text-white bg-white hover:filter invert transition duration-300 ease-in-out ">
-                <img src='/home.png' className="h-6 filter invert" alt="homeLogo" />
+                <img src='homeImages/home.png' className="h-6 filter invert" alt="homeLogo" />
               </button>
             </Link>
           </li>

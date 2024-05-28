@@ -8,7 +8,7 @@ import BodyLayout from '../grpComponents/bodyLayoutComponent';
 import BlogCard from '../homeComponents/blogCardComponent';
 import Card from '../grpComponents/coffeeComponent';
 import Link from 'next/link';
-import ImageWithHover from '@/homeComponents/imageComponent';
+
 const Waitless = () => { 
 
     const [showButton, setShowButton] = useState(false);
@@ -57,12 +57,12 @@ const Waitless = () => {
             <BodyLayout>
                 <Card
                     imageUrls={[
-                        "/devacademy.png",
+                        "waitlessImages/devacademy.png",
                         "logos/react.png",
                         "logos/knex.png",
                         "logos/sqlite3-icon.png",
                         "logos/nodejs-icon.png",
-                        "/type.png",
+                        "logos/type.png",
                         
                     ]}
                     
@@ -101,9 +101,9 @@ const Waitless = () => {
         Since the final project for Dev Academy only allowed for 1 week to plan, develop and deploy, as a team we decided to be clear with our intentions about how we were going to approach the project. We started by creating a rough plan on a white board which would be later refined using Trello. Once we had an outline we split the team into two groups and we were each assigned components to work on and write tests for. "/>
 
 <div className=" grid gap-4 md:flex md:flex-row md:flex-wrap justify-center pt-6 " >
-    <img className="  object-contain h-90 w-96 "src="/friday-project-planning.jpg" />
-    <img className="  object-contain h-90 w-96 "src="/waitlessPlanMon.jpeg" />
-    <img className= "object-contain h-90 w-96 " src="waitlessPlan.jpeg"/>
+    <img className="  object-contain h-90 w-96 "src="waitlessImages/friday-project-planning.jpg" />
+    <img className="  object-contain h-90 w-96 "src="waitlessImages/waitlessPlanMon.jpeg" />
+    <img className= "object-contain h-90 w-96 " src="waitlessImages/waitlessPlan.jpeg"/>
 
 
   </div>
