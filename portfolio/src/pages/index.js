@@ -115,7 +115,7 @@ export default function Home() {
         description="CS50 taught me what Dev Academy could not provide and that was a more foundational understanding of programming. I found it refreshing to take a step back from learning frameworks and technologies to having a better understanding of a langauge at a lower level. It really made me appreciate the details a lot more and gave me more confidence when dealing with higher-level abstract languages like Swift.  "
       />
              <BlogCard
-    imageUrls={["logos/mysql-logo.svg","/logos/pythn.png"]}
+    imageUrls={["logos/mysql-logo.svg","/logos/python.png"]}
         title="More Back-end"
         description="My understanding of back-end development expanded significantly once I delved into Python, despite its higher level of abstraction. Initially, it took some time to adjust to this new paradigm, but with persistence and practice, I gradually became accustomed to working with Python. Python's versatility and readability ultimately enhanced my development workflow, enabling me to tackle complex backend tasks with greater efficiency and confidence "
       />
