@@ -5,7 +5,7 @@ import Header from '../homeComponents/headerComponent';
 import LayoutComponent from '../grpComponents/layoutComponent';
 import ContentComponent from '../homeComponents/contentComponent';
 import BodyLayout from '../grpComponents/bodyLayoutComponent';
-import BlogCard from '../homeComponents/blogCardComponent';
+import {cn } from '../../utils/cn'
 import Card from '../grpComponents/coffeeComponent';
 import Link from 'next/link';
 import f1events from '../backEndComponents/f1events'
@@ -73,11 +73,11 @@ const Grandprix = () => {
     <div className="animate-fade-up bg-black pb-1  grid place-items-center sm:px-5 md:px-10 lg:px-20 xl:px-40">
     <div className="  bg-black pt-4 ">
 
-        <a className="flex justify-center m-10 mb-6 animate-fade-up card-font text-white">Click below to Demo the project or  View the Repo</a>
+        <a className="flex justify-center m-10 mb-6 animate-fade-up card-font text-white">Click below to View the project or  View the Repo</a>
         <div className="p-10  flex justify-center  ">
         <ul className=" flex ">
             <li >
-            <Link href="https://client-ten-green.vercel.app/">
+            <Link href="https://grand-prix-history.vercel.app/">
                 <button className="py-2 px-2 rounded  bg-gray hover:bg-white transition duration-300 ease-in-out">
                     <img src='logos/grandprixHistory.png' className="h-20" alt="digital Logo" />
            
@@ -118,7 +118,13 @@ const Grandprix = () => {
             </BodyLayout> 
             {showButton && (
                 <button
-                    className=" fixed bottom-10 right-10  py-2 px-4 rounded-full name-font  text-white bg-gray-400  "
+                className={cn(
+                    "fixed bottom-10 right-10 py-2 px-4 rounded-full text-white items-center justify-center",
+                    "rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]",
+                    "bg-[length:200%_100%] font-medium text-slate-400 transition-colors",
+                    "focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50",
+                    "animate-shimmer"
+                  )}
                     onClick={scrollToTop}
                 >
                     Return to Top

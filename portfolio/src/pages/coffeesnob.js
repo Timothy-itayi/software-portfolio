@@ -8,6 +8,7 @@ import Timeline from '../grpComponents/timelineComponent';
 import events from '../backEndComponents/events';
 import React, {useState} from 'react';
 import Link from 'next/link';
+import {cn } from '../../utils/cn'
 
 const Coffee = () => { 
 
@@ -103,7 +104,13 @@ const Coffee = () => {
 
             {showButton && (
                 <button
-                    className=" fixed bottom-10 right-10  py-2 px-4 rounded-full name-font  text-white bg-gray-400  "
+                className={cn(
+                    "fixed bottom-10 right-10 py-2 px-4 rounded-full text-white items-center justify-center",
+                    "rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)]",
+                    "bg-[length:200%_100%] font-medium text-slate-400 transition-colors",
+                    "focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50",
+                    "animate-shimmer"
+                  )}
                     onClick={scrollToTop}
                 >
                     Return to Top

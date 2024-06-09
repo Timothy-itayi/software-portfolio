@@ -1,34 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/pages/**/*.js", "./src/homeComponents/**/*.js","./src/grpComponents/**/*.js","./src/backEndComponents/**/*.js"],
-
- theme: {
-  extend: {
-    gridRow:{
-
-    },
-    maxWidth: {
-    
-    },
-    keyframes:{
-      fade: {
-        '0%': {opacity: '0'},
-        '100%': {opactiy: '1'},
+  content: ["./src/pages/**/*.js", "./src/homeComponents/**/*.js", "./src/grpComponents/**/*.js", "./src/backEndComponents/**/*.js"],
+  theme: {
+    extend: {
+      keyframes: {
+        shimmer: {
+          '0%': { backgroundPosition: '200% 0%' },
+          '100%': { backgroundPosition: '-200% 0%' },
+        },
+      },
+      animation: {
+        shimmer: "shimmer 2s linear infinite",
       },
     },
   },
-  animation:{
-    fade:'fade 1s east-out',
-  },
- },
-
-  variants: {
-    grayscale: ['responsive', 'hover'],
-  },
   plugins: [
-  require ('tailwindcss-animated'),
-
-  
+    require('tailwindcss-animated'),
   ],
-}
-
+};
