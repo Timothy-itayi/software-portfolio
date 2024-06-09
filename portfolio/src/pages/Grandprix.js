@@ -73,7 +73,7 @@ const Grandprix = () => {
     <div className="animate-fade-up bg-black pb-1  grid place-items-center sm:px-5 md:px-10 lg:px-20 xl:px-40">
     <div className="  bg-black pt-4 ">
 
-        <a className="flex justify-center m-10 mb-6 animate-fade-up card-font text-white">Click below to View the project or  View the Repo</a>
+        <a className="flex justify-center m-10 mb-6 animate-fade-up card-font text-white">Click below to Viewm the project or  View the Repo</a>
         <div className="p-10  flex justify-center  ">
         <ul className=" flex ">
             <li >

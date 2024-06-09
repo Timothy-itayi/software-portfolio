@@ -96,7 +96,7 @@ export default function Home() {
                   "bg-[length:200%_100%] font-medium text-slate-400 transition-colors",
                   "focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50",
                   "animate-shimmer text-white"
-                )} href="/Timothy_Itayi_-_Full_Stack_Developer.pdf" download>Download Resume</a>
+                )} href="/resume" download>Download Resume</a>
     
      </div>
 
@@ -159,7 +159,7 @@ export default function Home() {
             translateZ={20}
             as={Link}
             href="/waitless"
-            className="px-4 py-2 px-8 py-0.5  border-2 border-black dark:border-black uppercase bg-gray-399 text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] rounded text-xs font-normal dark:text-white"
+            className="px-4 py-2 px-8 text-white"
           >
             See More
           </CardItem>
@@ -201,7 +201,7 @@ export default function Home() {
             as={Link}
             href="/coffeesnob"
             target="__blank"
-            className="px-4 py-2 px-8 py-0.5  border-2 border-black dark:border-black uppercase bg-gray-399 text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] rounded text-xs font-normal dark:text-white"
+            className="px-4 py-2 px-8 text-white"
             >
               See More
           </CardItem>
@@ -243,7 +243,7 @@ export default function Home() {
             as={Link}
             href="/grandprix"
             target="__blank"
-            className="px-4 py-2 px-8 py-0.5  border-2 border-black dark:border-black uppercase bg-gray-399 text-black transition duration-200 text-sm shadow-[1px_1px_rgba(0,0,0),2px_2px_rgba(0,0,0),3px_3px_rgba(0,0,0),4px_4px_rgba(0,0,0),5px_5px_0px_0px_rgba(0,0,0)] dark:shadow-[1px_1px_rgba(255,255,255),2px_2px_rgba(255,255,255),3px_3px_rgba(255,255,255),4px_4px_rgba(255,255,255),5px_5px_0px_0px_rgba(255,255,255)] rounded text-xs font-normal dark:text-white"
+            className="px-4 py-2 px-8 text-white"
             >
               See More
           </CardItem>
