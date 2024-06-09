@@ -96,7 +96,7 @@ export default function Home() {
                   "bg-[length:200%_100%] font-medium text-slate-400 transition-colors",
                   "focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50",
                   "animate-shimmer text-white"
-                )} href="/resume" download>Download Resume</a>
+                )} href="/resume.pdf" download>Download Resume</a>
     
      </div>
 
