@@ -102,7 +102,7 @@ export default function Home() {
 
 
 <div className="flex justify-center  pt-7 mb-10 ">
-  <h1 className="text-white font-bold text-4xl"> Dev Academy and CS50  </h1>
+  <h1 className="text-white  header-font font-bold text-5xl"> Dev Academy and CS50  </h1>
 </div>
       <div className="h-[20rem] md:h-[20rem] [perspective:1000px] mt-2 relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
    
@@ -110,21 +110,16 @@ export default function Home() {
 
       
    </div>
-
-
-
-   
-     
-
-    </div>
-    
-    <div ref={projectsRef}>
-    <div className="py-5  flex justify-center  ">
-            <div className="xl:container mx-auto px-6   py-6 m-12 mb ">
-              <div className="mb-16    ">
-                <h2 className="mb-4 text-2xl font-bold text-white text-center md:text-4xl">
+   <h2 className=" text-5xl header-font font-bold  text-white text-center ">
                   Projects
                 </h2>
+
+
+                <div ref={projectsRef}>
+    <div className="  flex justify-center  ">
+            <div className="xl:container mx-auto px-6  ">
+              <div >
+               
                
                 <div className="flex flex-row justify-center">
   <div className="pr-6">
@@ -218,7 +213,7 @@ export default function Home() {
             translateZ="50"
             className="text-xl font-bold text-neutral-600 dark:text-white"
           >
-            GrandPrix-History
+            Grandprix History
           </CardItem>
           <CardItem
             as="p"
@@ -227,9 +222,51 @@ export default function Home() {
           >
             A web application to showcase my love for Formula 1. Made with React and Nodejs.
           </CardItem>
+          <CardItem translateZ="100" className="w-full flex justify-center mt-1 ">
+            <Image
+              src="/logos/helmet.png"
+              height="200"
+              width="220"
+              className="object-contain  group-hover/card:shadow-xl"
+              alt="thumbnail"
+            />
+          </CardItem>
+        </div>
+        <div className="flex justify-between items-center mt-4">
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href="/grandprix-history"
+            target="__blank"
+            className=" px-8 text-white"
+            >
+              See More
+          </CardItem>
+        </div>
+      </CardBody>
+    </CardContainer>
+  </div>
+
+  <div className="pr-6">
+    <CardContainer className="inter-var">
+      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+        <div>
+          <CardItem
+            translateZ="50"
+            className="text-xl font-bold text-neutral-600 dark:text-white"
+          >
+            F1 Heritage
+          </CardItem>
+          <CardItem
+            as="p"
+            translateZ="60"
+            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          >
+            A web application to showcase my love for Formula 1 even more so inspired by Grandprix History. Powered by Nextjs and Ui-Acertenity.
+          </CardItem>
           <CardItem translateZ="100" className="w-full mt-4">
             <Image
-              src="/logos/grandprixHistory.png"
+              src="/logos/manufactur.jpeg"
               height="500"
               width="500"
               className="object-contain rounded-xl group-hover/card:shadow-xl"
@@ -241,7 +278,7 @@ export default function Home() {
           <CardItem
             translateZ={20}
             as={Link}
-            href="/grandprix"
+            href="/f1-heritage"
             target="__blank"
             className="px-4 py-2 px-8 text-white"
             >
@@ -264,6 +301,13 @@ export default function Home() {
      
           </div>
           
+          <footer>
+        <p>&copy; {new Date().getFullYear()} Timothy itayi</p>
+      </footer>
+
+    </div>
+    
+   
           
 {showButton && (
                 <button
@@ -282,9 +326,7 @@ export default function Home() {
             )}
   
 
-      <footer>
-        <p>&copy; {new Date().getFullYear()} Timothy itayi</p>
-      </footer>
+     
     </>
   );
 }
