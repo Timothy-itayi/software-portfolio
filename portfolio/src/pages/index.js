@@ -101,7 +101,7 @@ export default function Home() {
      </div>
 
 
-<div className="flex justify-center  pt-7 mb-10 ">
+<div className="flex justify-center  pt-7 pb-10 ">
   <h1 className="text-white  header-font font-bold text-5xl"> Dev Academy and CS50  </h1>
 </div>
       <div className="h-[20rem] md:h-[20rem] [perspective:1000px] mt-2 relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
@@ -110,19 +110,15 @@ export default function Home() {
 
       
    </div>
-   <h2 className=" text-5xl header-font font-bold  text-white text-center ">
-                  Projects
-                </h2>
+  
 
 
-                <div ref={projectsRef}>
-    <div className="  flex justify-center  ">
-            <div className="xl:container mx-auto px-6  ">
-              <div >
-               
-               
-                <div className="flex flex-row justify-center">
-  <div className="pr-6">
+   <div ref={projectsRef} className="w-full flex flex-col items-center my-40">
+        <h2 className="text-5xl header-font font-bold text-white text-center pt-10  mb-10">Projects</h2>
+        <div className="w-full flex justify-center">
+    
+            <div className="flex flex-wrap justify-center">
+              <div className="px-6">
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
@@ -135,7 +131,7 @@ export default function Home() {
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+         className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
           >
             A restaurant web application designed to keep up with customer needs made with React
           </CardItem>
@@ -150,20 +146,29 @@ export default function Home() {
           </CardItem>
         </div>
         <div className="flex justify-between items-center mt-4">
+        <CardItem
+            translateZ={20}
+            as={Link}
+            href="https://orca-app-kf2qf.ondigitalocean.app/"
+             target="__blank"
+            className="px-4 py-2 px-8 text-xs text-white"
+            >
+              View App ↗
+          </CardItem>
           <CardItem
             translateZ={20}
             as={Link}
             href="/waitless"
-            className="px-4 py-2 px-8 text-white"
+            className=" py-2  text-xs text-white"
           >
-            See More
+            Learn More →
           </CardItem>
         </div>
       </CardBody>
     </CardContainer>
   </div>
 
-  <div className="pr-6">
+  <div className="pr-6 flex flex-col">
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
@@ -176,7 +181,7 @@ export default function Home() {
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
           >
             A cafe app to help customers discover coffee spots in their area made with Swift and TomTomSDK
           </CardItem>
@@ -191,21 +196,29 @@ export default function Home() {
           </CardItem>
         </div>
         <div className="flex justify-between items-center mt-4">
+        <CardItem
+            translateZ={20}
+            as={Link}
+            href="https://www.youtube.com/watch?v=vS-nl_sHrvI"
+             target="__blank"
+            className="px-4 py-2 px-8 text-xs text-white"
+            >
+              View Youtube Demo ↗
+          </CardItem>
           <CardItem
             translateZ={20}
             as={Link}
             href="/coffeesnob"
-            target="__blank"
-            className="px-4 py-2 px-8 text-white"
+            className=" py-2  text-xs text-white"
             >
-              See More
+                 Learn More →
           </CardItem>
         </div>
       </CardBody>
     </CardContainer>
   </div>
 
-  <div className="pr-6">
+  <div className="pr-6 flex flex-col">
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
@@ -218,7 +231,7 @@ export default function Home() {
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+      className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
           >
             A web application to showcase my love for Formula 1. Made with React and Nodejs.
           </CardItem>
@@ -233,21 +246,30 @@ export default function Home() {
           </CardItem>
         </div>
         <div className="flex justify-between items-center mt-4">
+        <CardItem
+            translateZ={20}
+            as={Link}
+            href="https://grand-prix-history.vercel.app/"
+             target="__blank"
+            className="px-4 py-2 px-8 text-xs text-white"
+            >
+              View Website ↗
+          </CardItem>
           <CardItem
             translateZ={20}
             as={Link}
             href="/grandprix-history"
-            target="__blank"
-            className=" px-8 text-white"
+            className="  text-xs text-white"
             >
-              See More
+               Learn More →
           </CardItem>
+          
         </div>
       </CardBody>
     </CardContainer>
   </div>
 
-  <div className="pr-6">
+  <div className="pr-6 flex flex-col">
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
@@ -260,7 +282,7 @@ export default function Home() {
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
           >
             A web application to showcase my love for Formula 1 even more so inspired by Grandprix History. Powered by Nextjs and Ui-Acertenity.
           </CardItem>
@@ -278,11 +300,19 @@ export default function Home() {
           <CardItem
             translateZ={20}
             as={Link}
-            href="/f1-heritage"
-            target="__blank"
-            className="px-4 py-2 px-8 text-white"
+            href="https://formula1heritage.cc/"
+             target="__blank"
+            className="px-4 py-2 px-8 text-xs text-white"
             >
-              See More
+              View Website ↗
+          </CardItem>
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href="/f1-heritage"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          >
+            Learn More →
           </CardItem>
         </div>
       </CardBody>
@@ -296,16 +326,16 @@ export default function Home() {
 
 
 
-        
+    
             </div>
      
-          </div>
+        
           
           <footer>
         <p>&copy; {new Date().getFullYear()} Timothy itayi</p>
       </footer>
 
-    </div>
+
     
    
           
