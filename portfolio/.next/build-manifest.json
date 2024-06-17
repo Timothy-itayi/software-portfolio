@@ -31,11 +31,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/f1-heritage.js"
-    ],
-    "/grandprix-history": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/grandprix-history.js"
     ]
   },
   "ampFirstPages": []

@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/f1-heritage": "pages/f1-heritage.js",
   "/": "pages/index.js",
-  "/grandprix-history": "pages/grandprix-history.js",
-  "/f1-heritage": "pages/f1-heritage.js"
+  "/waitless": "pages/waitless.js"
 }
