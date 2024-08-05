@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/f1-heritage": "pages/f1-heritage.js",
   "/": "pages/index.js",
-  "/waitless": "pages/waitless.js"
+  "/f1-heritage": "pages/f1-heritage.js"
 }
