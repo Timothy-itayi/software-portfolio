@@ -120,11 +120,11 @@ export default function Home() {
             <div className="flex flex-wrap justify-center">
               <div className="px-6">
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+      <CardBody className="  dark:bg-black bg-gray-300 relative group/card dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white"
+            className="text-xl font-bold text-neutral-600 text-black"
           >
             Waitless
           </CardItem>
@@ -151,7 +151,7 @@ export default function Home() {
             as={Link}
             href="https://orca-app-kf2qf.ondigitalocean.app/"
              target="__blank"
-            className="px-4 py-2 px-8 text-xs text-white"
+            className="px-4 py-2 px-8 text-xs text-black"
             >
               View App ↗
           </CardItem>
@@ -159,7 +159,7 @@ export default function Home() {
             translateZ={20}
             as={Link}
             href="/waitless"
-            className=" py-2  text-xs text-white"
+            className=" py-2  text-xs dark:text-white"
           >
             Learn More →
           </CardItem>
@@ -170,11 +170,11 @@ export default function Home() {
 
   <div className="pr-6 flex flex-col">
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+      <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white"
+            className="text-xl font-bold text-neutral-600 text-black"
           >
             CoffeeSnob
           </CardItem>
@@ -201,7 +201,7 @@ export default function Home() {
             as={Link}
             href="https://www.youtube.com/watch?v=vS-nl_sHrvI"
              target="__blank"
-            className="px-4 py-2 px-8 text-xs text-white"
+            className="px-4 py-2 px-8 text-xs dark:text-white"
             >
               View Youtube Demo ↗
           </CardItem>
@@ -209,7 +209,7 @@ export default function Home() {
             translateZ={20}
             as={Link}
             href="/coffeesnob"
-            className=" py-2  text-xs text-white"
+            className=" py-2  text-xs dark:text-white"
             >
                  Learn More →
           </CardItem>
@@ -220,11 +220,11 @@ export default function Home() {
 
   <div className="pr-6 flex flex-col">
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+      <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white"
+            className="text-xl font-bold text-neutral-600 text-black"
           >
             Grandprix History
           </CardItem>
@@ -251,7 +251,7 @@ export default function Home() {
             as={Link}
             href="https://grand-prix-history.vercel.app/"
              target="__blank"
-            className="px-4 py-2 px-8 text-xs text-white"
+            className="px-4 py-2 px-8 text-xs dark:text-white"
             >
               View Website ↗
           </CardItem>
@@ -259,7 +259,7 @@ export default function Home() {
             translateZ={20}
             as={Link}
             href="/grandprix-history"
-            className="  text-xs text-white"
+            className="  text-xs dark:text-white"
             >
                Learn More →
           </CardItem>
@@ -271,11 +271,11 @@ export default function Home() {
 
   <div className="pr-6 flex flex-col">
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+      <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white"
+            className="text-xl font-bold text-neutral-600 text-black"
           >
             F1 Heritage
           </CardItem>
@@ -302,7 +302,7 @@ export default function Home() {
             as={Link}
             href="https://formula1heritage.cc/"
              target="__blank"
-            className="px-4 py-2 px-8 text-xs text-white"
+            className="px-4 py-2 px-8 text-xs dark:text-white"
             >
               View Website ↗
           </CardItem>
