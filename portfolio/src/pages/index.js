@@ -120,11 +120,11 @@ export default function Home() {
             <div className="flex flex-wrap justify-center">
               <div className="px-6">
     <CardContainer className="inter-var">
-      <CardBody className="  dark:bg-black bg-gray-300 relative group/card dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+      <CardBody className=" dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  border-black/[0.1] w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 text-black"
+            className="text-xl font-bold text-neutral-600 text-white"
           >
             Waitless
           </CardItem>
@@ -151,7 +151,7 @@ export default function Home() {
             as={Link}
             href="https://orca-app-kf2qf.ondigitalocean.app/"
              target="__blank"
-            className="px-4 py-2 px-8 text-xs text-black"
+            className="px-4 py-2 px-8 text-xs text-white"
             >
               View App ↗
           </CardItem>
@@ -174,7 +174,7 @@ export default function Home() {
         <div>
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 text-black"
+            className="text-xl font-bold text-neutral-600 text-white"
           >
             CoffeeSnob
           </CardItem>
@@ -224,7 +224,7 @@ export default function Home() {
         <div>
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 text-black"
+            className="text-xl font-bold text-neutral-600 text-white"
           >
             Grandprix History
           </CardItem>
@@ -275,7 +275,7 @@ export default function Home() {
         <div>
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 text-black"
+            className="text-xl font-bold text-neutral-600 text-white"
           >
             F1 Heritage
           </CardItem>
