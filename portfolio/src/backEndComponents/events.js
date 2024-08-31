@@ -20,7 +20,7 @@ const events = [
          {url: '/coffeeImages/coffee-react.PNG', alt: 'reactSnob'}]},
 
     { title: 'Apple Development',
-     description: 'I had to humble my self and take a new approach to the way I was going to rebuild CoffeeSnob. I knew I only had 2 weeks to go and I could not step in with the same presuppositions from before and so I took the rudimentary approach and brainstormed and decided to focus on 2 features which were; render a map and make it interactive and display cafe cards.  I found TomTomMaps for IOS a great tool to use though very restrictive in its methodology I did found it very useful as a learning tool.   ', 
+     description: 'I had to humble my self and take a new approach to the way I was going to rebuild CoffeeSnob. I knew I only had 2 weeks to go and I could not step in with the same presuppositions from before and so I took the rudimentary approach and brainstormed and decided to focus on 2 features which were; render a map and make it interactive and display cafe cards.  I found TomTomMaps for IOS a great tool to use though very restrictive in its methodology I did find it very useful as a learning tool.   ', 
      date: '29/3/24',
       images:
       [
@@ -39,7 +39,7 @@ const events = [
       
 
     { title: 'Welcome to CoffeeSnob ', 
-    description: 'I am grateful for how the app turned out, though I can say it is not exactly like the prototype, However, I do believe I have gained an understanding of what this app could become with further development and the support of a team. Working on this project gave me a new apprecitiation for mobile developers, Working on this project has given me a new appreciation for mobile developers; it is no easy feat, but I am glad to have learned so much in such a short amount of time. ',
+    description: 'I am grateful for how the app turned out, though I can say it is not exactly like the prototype, However, I do believe I have gained an understanding of what this app could become with further development and the support of a team. Working on this project has given me a new appreciation for mobile developers; it is no easy feat, but I am glad to have learned so much in such a short amount of time. ',
      date: '12/4/24',
     images: [
       

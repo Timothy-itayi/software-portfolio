@@ -4,8 +4,7 @@ import {cn } from '../../utils/cn'
 import Head from 'next/head';
 import Navbar from '../homeComponents/navbarComponent'
 import Header from '../homeComponents/headerComponent';
-import Card from '../homeComponents/projectCardComponent';
-import Content from './content'
+
 import ImageWithHover from '../homeComponents/imageComponent';
 import BlogCard from '../homeComponents/blogCardComponent';
 import React, {useState,useRef,} from 'react';
@@ -64,7 +63,7 @@ export default function Home() {
 
       
 
-<div className="flex flex-row">
+<div className="flex flex-row animate-fade-up">
 <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
@@ -96,7 +95,7 @@ export default function Home() {
                   "bg-[length:200%_100%] font-medium text-slate-400 transition-colors",
                   "focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50",
                   "animate-shimmer text-white"
-                )} href="/resume.pdf" download>Download Resume</a>
+                )} href="/Full-Stack-Developer-Resume.pdf" download>Download Resume</a>
     
      </div>
 
@@ -118,107 +117,9 @@ export default function Home() {
         <div className="w-full flex justify-center">
     
             <div className="flex flex-wrap justify-center">
-              <div className="px-6">
-    <CardContainer className="inter-var">
-      <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
-        <div>
-          <CardItem
-            translateZ="50"
-            className="text-xl font-bold text-neutral-600 text-white"
-          >
-            Waitless
-          </CardItem>
-          <CardItem
-            as="p"
-            translateZ="60"
-         className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
-          >
-            A restaurant web application designed to keep up with customer needs made with React
-          </CardItem>
-          <CardItem translateZ="100" className="w-full mt-4">
-            <Image
-              src="/logos/group1.png"
-              height="500"
-              width="500"
-              className="object-contain rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
-            />
-          </CardItem>
-        </div>
-        <div className="flex justify-between items-center mt-4">
-        <CardItem
-            translateZ={20}
-            as={Link}
-            href="https://orca-app-kf2qf.ondigitalocean.app/"
-             target="__blank"
-            className="px-4 py-2 px-8 text-xs text-white"
-            >
-              View App ↗
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href="/waitless"
-            className=" py-2  text-xs dark:text-white"
-          >
-            Learn More →
-          </CardItem>
-        </div>
-      </CardBody>
-    </CardContainer>
-  </div>
+             
 
-  <div className="pr-6 flex flex-col">
-    <CardContainer className="inter-var">
-      <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
-        <div>
-          <CardItem
-            translateZ="50"
-            className="text-xl font-bold text-neutral-600 text-white"
-          >
-            CoffeeSnob
-          </CardItem>
-          <CardItem
-            as="p"
-            translateZ="60"
-           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
-          >
-            A cafe app to help customers discover coffee spots in their area made with Swift and TomTomSDK
-          </CardItem>
-          <CardItem translateZ="100" className="w-full mt-4">
-            <Image
-              src="/logos/coffeesnobLogo.png"
-              height="500"
-              width="500"
-              className="object-contain rounded-xl group-hover/card:shadow-xl"
-              alt="thumbnail"
-            />
-          </CardItem>
-        </div>
-        <div className="flex justify-between items-center mt-4">
-        <CardItem
-            translateZ={20}
-            as={Link}
-            href="https://www.youtube.com/watch?v=vS-nl_sHrvI"
-             target="__blank"
-            className="px-4 py-2 px-8 text-xs dark:text-white"
-            >
-              View Youtube Demo ↗
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href="/coffeesnob"
-            className=" py-2  text-xs dark:text-white"
-            >
-                 Learn More →
-          </CardItem>
-        </div>
-      </CardBody>
-    </CardContainer>
-  </div>
-
-  <div className="pr-6 flex flex-col">
+            <div className="pr-6 flex flex-col">
     <CardContainer className="inter-var">
       <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
@@ -269,6 +170,58 @@ export default function Home() {
     </CardContainer>
   </div>
 
+           
+  <div className="pr-6 flex flex-col">
+    <CardContainer className="inter-var">
+      <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+        <div>
+          <CardItem
+            translateZ="50"
+            className="text-xl font-bold text-neutral-600 text-white"
+          >
+            CoffeeSnob
+          </CardItem>
+          <CardItem
+            as="p"
+            translateZ="60"
+           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
+          >
+            A cafe app to help customers discover coffee spots in their area made with Swift and TomTomSDK
+          </CardItem>
+          <CardItem translateZ="100" className="w-full mt-4">
+            <Image
+              src="/logos/coffeesnobLogo.png"
+              height="500"
+              width="500"
+              className="object-contain rounded-xl group-hover/card:shadow-xl"
+              alt="thumbnail"
+            />
+          </CardItem>
+        </div>
+        <div className="flex justify-between items-center mt-4">
+        <CardItem
+            translateZ={20}
+            as={Link}
+            href="https://www.youtube.com/watch?v=vS-nl_sHrvI"
+             target="__blank"
+            className="px-4 py-2 px-8 text-xs dark:text-white"
+            >
+              View Youtube Demo ↗
+          </CardItem>
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href="/coffeesnob"
+            className=" py-2  text-xs dark:text-white"
+            >
+                 Learn More →
+          </CardItem>
+        </div>
+      </CardBody>
+    </CardContainer>
+  </div>
+
+  
   <div className="pr-6 flex flex-col">
     <CardContainer className="inter-var">
       <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
@@ -311,6 +264,48 @@ export default function Home() {
             as={Link}
             href="/f1-heritage"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          >
+            Learn More →
+          </CardItem>
+        </div>
+      </CardBody>
+    </CardContainer>
+  </div>
+
+  <div className="px-6">
+    <CardContainer className="inter-var">
+      <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+        <div>
+          <CardItem
+            translateZ="50"
+            className="text-xl font-bold text-neutral-600 text-white"
+          >
+            Waitless
+          </CardItem>
+          <CardItem
+            as="p"
+            translateZ="60"
+         className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
+          >
+            A restaurant web application designed to keep up with customer needs made with React
+          </CardItem>
+          <CardItem translateZ="100" className="w-full mt-4">
+            <Image
+              src="/logos/group1.png"
+              height="500"
+              width="500"
+              className="object-contain rounded-xl group-hover/card:shadow-xl"
+              alt="thumbnail"
+            />
+          </CardItem>
+        </div>
+        <div className="flex justify-between items-center mt-4">
+      
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href="/waitless"
+            className=" py-2  text-xs dark:text-white"
           >
             Learn More →
           </CardItem>
