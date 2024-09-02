@@ -125,7 +125,9 @@ export default function Home() {
 </div>
 
    <div ref={projectsRef} className="w-full flex flex-col items-center my-40">
+<div className="py-10">
 
+</div>
         <h2 className="text-5xl header-font font-bold text-white text-center pt-10  mb-10">Projects</h2>
         <div className="w-full flex justify-center">
     
