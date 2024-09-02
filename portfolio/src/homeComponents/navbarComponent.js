@@ -18,15 +18,15 @@ const Navbar = ({ scrollToProjects }) => {
         <ul className="flex">
           <li>
             <Link href="https://github.com/Timothy-itayi">
-              <button className="py-4 px-5 text-black bg-white hover:filter invert transition duration-300 ease-in-out" >
-                <img src='logos/github.png' className="h-7 filter invert " alt="GitHub Logo" />
+              <button className="py-4 px-5 text-black  transition duration-300 ease-in-out" >
+                <img src='homeImages/git-con.png' className="h-7 filter invert object-cover " alt="GitHub Logo" />
               </button>
             </Link>
           </li>
           <li>
             <Link href="https://www.linkedin.com/in/timothy-itayi-ab8754138/">
-              <button className="py-5 px-6 text-white bg-white hover:filter invert transition duration-300 ease-in-out ">
-                <img src='logos/link.png' className="h-5 " alt="LinkedIn Logo" />
+              <button className="py-5 px-6 text-white   transition duration-300 ease-in-out ">
+                <img src='homeImages/linkedin.png' className="h-6 object-cover " alt="LinkedIn Logo" />
               </button>
             </Link>
           </li>
