@@ -17,14 +17,14 @@ const Navbar = () => {
             <li>
               <Link href="https://github.com/Timothy-itayi">
                 <button className="py-4 px-5 text-white bg-black  transition duration-300 ease-in-out" >
-                <img src='logos/github.png' className="h-7 " alt="GitHub Logo" />
+                <img src='homeImages/git-con.png' className="h-7 " alt="GitHub" />
                   </button>
               </Link>
             </li>
             <li>
               <Link href="https://www.linkedin.com/in/timothy-itayi-ab8754138/"> 
                 <button className="rounded-br-lg py-5 px-6  text-white bg-black transition duration-300 ease-in-out ">
-                <img src='logos/link.png' className="h-5 filter invert" alt="LinkedIn Logo" />
+                <img src='homeImages/linkedin.png' className="h-5 filter invert" alt="LinkedIn" />
                 </button>
               </Link>
             </li>
