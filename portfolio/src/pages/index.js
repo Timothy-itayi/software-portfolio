@@ -64,7 +64,7 @@ export default function Home() {
       
 
 <div className="flex flex-row animate-fade-up">
-<BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+<BentoGrid className="max-w-4xl mx-auto  md:auto-rows-[20rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -72,12 +72,18 @@ export default function Home() {
           description={item.description}
           header={item.header}
           className={item.className}
-          icon={item.icon}
+          
         />
       ))}
     </BentoGrid>
     
-           
+    {/* <div className="flex justify-center items-center mt-4 md:mt-0">
+    <ImageWithHover 
+      src1="/path/to/image1.jpg"  // Add your image paths here
+      src2="/path/to/image2.jpg"  // Add your image paths here
+      alt="Descriptive alt text"  // Add your alt text here
+    />
+  </div> */}
 
 </div>
 
@@ -103,16 +109,16 @@ export default function Home() {
 <div className="flex justify-center  pt-7 pb-10 ">
   <h1 className="text-white  header-font font-bold text-5xl"> Dev Academy and CS50  </h1>
 </div>
-      <div className="h-[20rem] md:h-[20rem] [perspective:1000px] mt-2 relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
-   
+      <div className="h-[20rem] md:h-[20rem] [perspective:1000px] mt-2 relative flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
       <Tabs tabs={devAcademy} />
-
-      
    </div>
   
+<div className="py-40">
 
+</div>
 
    <div ref={projectsRef} className="w-full flex flex-col items-center my-40">
+
         <h2 className="text-5xl header-font font-bold text-white text-center pt-10  mb-10">Projects</h2>
         <div className="w-full flex justify-center">
     
@@ -141,7 +147,7 @@ export default function Home() {
               src="/logos/helmet.png"
               height="200"
               width="220"
-              className="object-contain  group-hover/card:shadow-xl"
+              className="object-contain  "
               alt="thumbnail"
             />
           </CardItem>
@@ -188,12 +194,12 @@ export default function Home() {
           >
             A cafe app to help customers discover coffee spots in their area made with Swift and TomTomSDK
           </CardItem>
-          <CardItem translateZ="100" className="w-full mt-4">
+          <CardItem translateZ="100"  className="w-full flex justify-center mt-1">
             <Image
               src="/logos/coffeesnobLogo.png"
-              height="500"
-              width="500"
-              className="object-contain rounded-xl group-hover/card:shadow-xl"
+              height="100"
+              width="270"
+              className=" object-contain"
               alt="thumbnail"
             />
           </CardItem>
@@ -239,19 +245,19 @@ export default function Home() {
           >
             A web application to showcase my love for Formula 1 even more so inspired by Grandprix History. Powered by Nextjs and Ui-Acertenity.
           </CardItem>
-          <CardItem translateZ="100" className="w-full mt-4">
+          <CardItem translateZ="100" className="w-full flex justify-center mt-1">
             <Image
               src="/logos/manufactur.jpeg"
-              height="500"
-              width="500"
-              className="object-contain rounded-xl group-hover/card:shadow-xl"
+              height="200"
+              width="300"
+              className="object-contain "
               alt="thumbnail"
             />
           </CardItem>
         </div>
         <div className="flex justify-between items-center mt-4">
           <CardItem
-            translateZ={20}
+            translateZ={50}
             as={Link}
             href="https://formula1heritage.cc/"
              target="__blank"
@@ -260,7 +266,7 @@ export default function Home() {
               View Website ↗
           </CardItem>
           <CardItem
-            translateZ={20}
+            translateZ={50}
             as={Link}
             href="/f1-heritage"
             className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
@@ -289,12 +295,12 @@ export default function Home() {
           >
             A restaurant web application designed to keep up with customer needs made with React
           </CardItem>
-          <CardItem translateZ="100" className="w-full mt-4">
+          <CardItem translateZ="100" className="w-full flex justify-center mt-1">
             <Image
               src="/logos/group1.png"
-              height="500"
-              width="500"
-              className="object-contain rounded-xl group-hover/card:shadow-xl"
+              height="100"
+              width="250"
+              className="object-contain "
               alt="thumbnail"
             />
           </CardItem>
@@ -364,7 +370,7 @@ export default function Home() {
       title: "Fundamentals",
       value: "fundamentals",
       content: (
-        <div className="md:mx-auto container  bg-white">
+        <div className="md:mx-auto container  dark:bg-white">
        
         
           
@@ -411,7 +417,7 @@ export default function Home() {
                 imageUrls={[
                   "/logos/nodejs-icon.png",
                   "/logos/sqlite3-icon.png",
-                  "/logos/Git_icon.png",
+                  "/logos/python.png",
                 ]}
                 title="Back-end Technologies"
                 description="As much as I enjoy Front-end for its flair, I needed to grasp the back-end portion of this discipline. Dev Academy provided an introductory back-end stack to get me familiar with. We were also introduced to Restful APIs as well as CD/CI methodologies." />
@@ -428,30 +434,16 @@ export default function Home() {
           
             <div className="md:mx-auto container  ">
             <BlogCard
-            imageUrls={["/logos/C.png", "/logos/swfit.png"]}
+            imageUrls={["/logos/C.png", "/logos/swfit.png","logos/mysql-logo.svg",]}
             title="Computer Science"
-            description="CS50 taught me what Dev Academy could not provide and that was a more foundational understanding of programming. I found it refreshing to take a step back from learning frameworks and technologies to having a better understanding of a langauge at a lower level. It really made me appreciate the details a lot more and gave me more confidence when dealing with higher-level abstract languages like Swift.  " />
+            description="I found it refreshing to take a step back from learning frameworks and technologies to having a better understanding of a langauge at a lower level. It really made me appreciate the details a lot more and gave me more confidence when dealing with higher-level abstract languages like Swift.  " />
       
             </div>
         
     </div>
       ),
     },
-    {
-      title: "Databases",
-      value: "databases",
-      content: (
-        <div className="md:mx-auto contain  border-full border-2 bg-white">
-    
-    <BlogCard
-            imageUrls={["logos/mysql-logo.svg", "/logos/python.png"]}
-            title="Databases"
-            description="My understanding of back-end development expanded significantly once I delved into Python, despite its higher level of abstraction. Initially, it took some time to adjust to this new paradigm, but with persistence and practice, I gradually became accustomed to working with Python. Python's versatility and readability ultimately enhanced my development workflow, enabling me to tackle complex backend tasks with greater efficiency and confidence " />
-
-        </div>
-        
-      ),
-    },
+ 
    
   ];
 
@@ -465,14 +457,14 @@ export default function Home() {
         "Hi, I am a  Full Stack Developer with a keen eye for front-end developement. I enjoy the challenge of building projects and learning to grow as a developer. If I am not in front of a screen you will either find me WeightLifting,  BBQing or Sim Racing.",
       header: <Header name="Timothy Itayi" title="Full Stack Developer" />,
       className: "md:col-span-2 m-8",
-      icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+      
     },
     {
       title: "",
       description: "",
       header: <ImageWithHover src1="homeImages/headshot.jpeg" src2="homeImages/headshot2.jpeg" alt="Image" />,
-      className: "md:col-span-1 m-8 justify-center",
-      icon: "",
+      className: "flex flex-row m-8 p-4 justify-center",
+     
     },
   
   
