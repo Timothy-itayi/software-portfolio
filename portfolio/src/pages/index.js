@@ -109,11 +109,18 @@ export default function Home() {
 <div className="flex justify-center  pt-7 pb-10 ">
   <h1 className="text-white  header-font font-bold text-5xl"> Dev Academy and CS50  </h1>
 </div>
+
+<div className="py-10">
+
+</div>
       <div className="h-[20rem] md:h-[20rem] [perspective:1000px] mt-2 relative flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
       <Tabs tabs={devAcademy} />
    </div>
   
 <div className="py-40">
+</div>
+
+<div className="py-10">
 
 </div>
 
@@ -125,7 +132,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center">
              
 
-            <div className="pr-6 flex flex-col">
+            <div className="px-6 flex flex-col">
     <CardContainer className="inter-var">
       <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
@@ -177,7 +184,7 @@ export default function Home() {
   </div>
 
            
-  <div className="pr-6 flex flex-col">
+  <div className="px-6 flex flex-col">
     <CardContainer className="inter-var">
       <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
@@ -228,7 +235,7 @@ export default function Home() {
   </div>
 
   
-  <div className="pr-6 flex flex-col">
+  <div className="px-6 flex flex-col">
     <CardContainer className="inter-var">
       <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
         <div>
