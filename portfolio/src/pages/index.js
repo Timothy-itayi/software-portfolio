@@ -236,6 +236,55 @@ export default function Home() {
     </CardContainer>
   </div>
 
+  <div className="px-6 flex flex-col">
+    <CardContainer className="inter-var">
+      <CardBody className="dark:bg-black bg-gray-300 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black  w-auto sm:w-[20rem] h-[32rem] rounded-xl p-6 border flex flex-col justify-between">
+        <div>
+          <CardItem
+            translateZ="50"
+            className="text-xl font-bold text-neutral-600 text-white"
+          >
+            T2 Clone
+          </CardItem>
+          <CardItem
+            as="p"
+            translateZ="60"
+           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 h-[5rem] overflow-auto"
+          >
+            Cloning Aspects of T2 Tea Website - Card, Products, Product Detail
+          </CardItem>
+          <CardItem translateZ="100" className="w-full flex justify-center mt-1">
+            <Image
+              src="/homeImages/t2.svg"
+              height="200"
+              width="300"
+              className="object-contain "
+              alt="thumbnail"
+            />
+          </CardItem>
+        </div>
+        <div className="flex justify-between items-center mt-4">
+          <CardItem
+            translateZ={50}
+            as={Link}
+            href=""
+             target="__blank"
+            className="px-4 py-2 px-8 text-xs dark:text-white"
+            >
+           
+          </CardItem>
+          <CardItem
+            translateZ={50}
+            as={Link}
+            href="/t2"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          >
+            Learn More →
+          </CardItem>
+        </div>
+      </CardBody>
+    </CardContainer>
+  </div>
   
   <div className="px-6 flex flex-col">
     <CardContainer className="inter-var">
