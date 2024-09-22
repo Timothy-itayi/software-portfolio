@@ -51,7 +51,10 @@ const F1_Heritage  = () => {
 </div>
             <div className="flex justify-center m-10 mb-6 animate-fade-up  ">
                 <LayoutComponent style={{ fontSize: '24px', color: 'white', fontFamily: 'Inter-Regular', paddingLeft: 32 }}>
-               Built to closely mimic the design of the original site. The goal is to recreate the website's appearance as accurately as possible, with a focus on responsive design.
+
+
+                Built to closely mimic the design of the original site. The goal is to recreate the website&apos;s appearance as accurately as possible, with a focus on responsive design.
+
                 </LayoutComponent>
             </div>
 
