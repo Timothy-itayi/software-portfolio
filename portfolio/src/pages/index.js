@@ -267,11 +267,11 @@ export default function Home() {
           <CardItem
             translateZ={50}
             as={Link}
-            href=""
+            href="https://youtu.be/9Vzb0vZTkkc"
              target="__blank"
             className="px-4 py-2 px-8 text-xs dark:text-white"
             >
-           
+            View Youtube Demo ↗
           </CardItem>
           <CardItem
             translateZ={50}
