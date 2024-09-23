@@ -78,7 +78,14 @@ const F1_Heritage  = () => {
         <div className="  flex justify-center  ">
         <ul className=" flex ">
         
-            
+        <li >
+            <Link href="https://youtu.be/9Vzb0vZTkkc">
+                <button className="py-2 px-2 rounded  bg-black hover:bg-red-500 transition duration-300 ease-in-out">
+                    <img src='logos/youtube.png' className="h-20 filter invert" alt="youtube Logo" />
+           
+                </button>
+            </Link>
+            </li>
             <li>
             <Link href="https://github.com/Timothy-itayi/T2-Clone">
                 <button className="py-6 px-4 ml-3 rounded text-white bg-black hover:bg-gray-300  transition duration-300 ease-in-out">
@@ -88,7 +95,7 @@ const F1_Heritage  = () => {
                 </Link>
             </li>
                
-         
+       
         </ul>
     
         </div>
