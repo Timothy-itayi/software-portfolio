@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/t2": "pages/t2.js",
-  "/grandprix-history": "pages/grandprix-history.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/kogan": "pages/kogan.js"
 }

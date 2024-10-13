@@ -10,7 +10,7 @@ import Card from '../grpComponents/coffeeComponent';
 import Link from 'next/link';
 
 
-const F1_Heritage  = () => { 
+const T2  = () => { 
 
     const [showButton, setShowButton] = useState(false);
 
@@ -134,4 +134,4 @@ const F1_Heritage  = () => {
     )
 };
 
-        export default F1_Heritage ;
+        export default T2 ;
