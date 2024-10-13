@@ -12,6 +12,11 @@
   ],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -22,15 +27,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/grandprix-history": [
+    "/kogan": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/grandprix-history.js"
-    ],
-    "/t2": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/t2.js"
+      "static/chunks/pages/kogan.js"
     ]
   },
   "ampFirstPages": []
